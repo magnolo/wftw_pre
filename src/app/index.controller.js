@@ -8,7 +8,7 @@
  * Controller of the ftwApp
  */
 angular.module('preSite')
-	.controller('IndexCtrl', function ($window, $timeout, $twitterApi, $resource, $scope, leafletData) {
+	.controller('IndexCtrl', function ($window, $timeout, $resource, $scope, leafletData) {
 		$scope.home = true;
 		$scope.$on('$stateChangeSuccess', function (event, toState) {
 			if (toState.name !== 'home') {
@@ -152,22 +152,6 @@ angular.module('preSite')
 					$log.error('MailChimp Error: %o', error);
 				}
 			);
-		};
-		var TwitterAPI = $resource("http://search.twitter.com/search.json", {
-			callback: "JSON_CALLBACK"
-		}, {
-			get: {
-				method: "JSONP"
-			}
-		});
-
-		$scope.search = function () {
-      debugger;
-			$scope.searchResult = TwitterAPI.get({
-				q: $scope.searchTerm
-			}).success(function(data){
-        console.log(data);
-      });
 		};
 		$scope.animate();
 	});

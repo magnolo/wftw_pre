@@ -19,8 +19,7 @@
     "angular-resource": "~1.4.7",
     "angular-messages": "~1.4.7",
     "angular-material-icons": "~0.6.0",
-    "svg-morpheus": "~0.1.8",
-    "ng-twitter-api": "~0.1.5"
+    "svg-morpheus": "~0.1.8"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
