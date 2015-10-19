@@ -1,0 +1,42 @@
+md-list-item > .md-avatar:first-child, md-list-item .md-list-item-inner > .md-avatar:first-child{
+  width:auto;
+  height:auto;
+  border-radius:50px;
+  @media screen and (max-width: 700px){
+    width:25%;
+    border-radius: 20px
+  }
+
+}
+ md-list-item.md-3-line .md-list-item-text{
+   margin-top:20px;
+   h3, h4, h4 a{
+     color:#29abe3 !important;
+   }
+   a{
+     text-decoration: none;
+     &:hover{
+       text-decoration: underline;
+     }
+   }
+ }
+ md-list md-list-item.md-2-line .md-list-item-text p, md-list md-list-item.md-3-line .md-list-item-text p{
+   color: #074487;
+
+ }
+ .full.md-list md-list-item.md-2-line .md-list-item-text p, md-list.full md-list-item.md-3-line .md-list-item-text p{
+text-align: left;
+margin-top: 1.5em;
+ }
+ .coop{
+   padding:2em;
+   margin-bottom:2em;
+   text-align: center;
+   .min-header{
+     margin-bottom:2em;
+     color:#00428a;
+   }
+   img{
+     max-height: 55px;
+   }
+ }

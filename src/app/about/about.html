@@ -1,0 +1,100 @@
+<div class="block center">
+  <h2>Über uns</h2>
+  <p>Der Verein Feel The World wurde im März 2015 gegründet. Vorrangiges Ziel unserer gemeinnützigen, nicht gewinnorientierten Organisation ist es, Menschen zu hochsensiblen Bereichen des
+Zusammenlebens echten und zeitgemäßen Informationszugang zu ermöglichen.<br/>
+    Unsere Mitglieder glauben fest daran, dass Bildung und ein gleicher Zugang zu Bildungschancen wichtige Stützen des demokratichen Bildungs- und Meinungsbildungsprozesses sind.</p>
+  <br>
+  <h2>Kontakt</h2>
+  <p>
+    <a href="mailto:info@wefeeltheworld.org">info@wefeeltheworld.org</a><br/>
+    +43699/17275937
+  </p>
+  <p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    23degree ist das erste Vorhaben von Feel the World.
+    <br>
+    <br>
+    <br>
+  </p>
+</div>
+<div layout-align="center center" layout="row">
+  <div class="coop">
+    <div class="min-header">gefördert durch</div>
+    <div class="image">
+      <img src="/assets/images/aws.png"/>
+
+    </div>
+  </div>
+  <div class="coop">
+    <div class="min-header">in Kooperation mit</div>
+    <div class="image">
+      <img src="/assets/images/rog.png"/>
+
+    </div>
+  </div>
+</div>
+<div class="block center">
+  <h2>Das Team</h2>
+  <md-list class="full" style="text-align:left">
+    <md-list-item class="md-3-line fx-fade-down fx-easing-bounce" ng-repeat="item in about.team">
+      <img alt="{{item.name}}" class="md-avatar" ng-src="/assets/images/team/{{item.image}}"/>
+      <div class="md-list-item-text" layout="column">
+
+        <h3>{{ item.name }}</h3>
+        <h4>
+          <a ng-href="mailto:{{item.email}}">{{ item.email }}</a>
+        </h4>
+        <p ng-bind-html="item.text"></p>
+
+      </div>
+    </md-list-item>
+  </md-list>
+</div>
+<div class="block center">
+  <h2 style="margin-bottom:0px;margin-top:3em">Die UnterstützerInnen</h2>
+  <div layout-sm="column" layout-md="column" layout="row" >
+    <div flex-sm="100" flex-md="100" flex="50">
+      <md-list>
+        <md-list-item class="md-3-line fx-fade-down fx-easing-bounce" ng-repeat="item in about.support | limitTo:6">
+          <div class="md-list-item-text" layout="column">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.job }}</p>
+            <h4>
+              <a ng-href="mailto:{{item.email}}">{{ item.email }}</a>
+            </h4>
+
+          </div>
+        </md-list-item>
+      </md-list>
+    </div>
+    <div flex-sm="100" flex-md="100" flex="50">
+      <md-list>
+        <md-list-item class="md-3-line fx-fade-down fx-easing-bounce" ng-repeat="item in about.support | limitTo:-6">
+          <div class="md-list-item-text" layout="column">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.job }}</p>
+            <h4>
+              <a ng-href="mailto:{{item.email}}">{{ item.email }}</a>
+            </h4>
+
+          </div>
+        </md-list-item>
+      </md-list>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div layout-align="center center" layout="column">
+  <div class="logo">
+    <a href="http://www.23degree.org"><img layout="row" src="/assets/images/23_logo.png" style="max-width:125px"/></a>
+  </div>
+  <br>
+  <a href="http://www.23degree.org">www.23degree.org</a>
+</div>
+<br>

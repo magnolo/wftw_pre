@@ -1,0 +1,33 @@
+<div class="home">
+  <div class="block">
+    <h2>Newsletter abonnieren</h2>
+    <p>Stay tuned mit 23degree. Hier können Sie sich zu unserem Newsletter anmelden. So erhalten Sie regelmässig Informationen darüber, was sich bei 23degree tut, bis zum launch der Site im Frühjahr 2016.</p>
+    <form name="MailchimpSubscriptionForm" >
+      <div class="anim-left" ng-hide="mailchimp.result === 'success'">
+        <input class="hidden" ng-init="mailchimp.username='wefeeltheword'" ng-model="mailchimp.username" type="hidden">
+        <input class="hidden" ng-init="mailchimp.dc='us10'" ng-model="mailchimp.dc" type="hidden">
+        <input class="hidden" ng-init="mailchimp.u='50718cc74e5de3a3a18263ac1'" ng-model="mailchimp.u" type="hidden">
+        <input class="hidden" ng-init="mailchimp.id='d8ca207c76'" ng-model="mailchimp.id" type="hidden">
+
+        <!--<div class="form-group form-styled">
+          <input class="form-control" name="EMAIL" ng-model="mailchimp.EMAIL" placeholder="Subscribe to newsletter..." required type="email">
+        </div>-->
+        <md-input-container>
+          <label>Emailadresse</label>
+          <input name="description" type="email" ng-model="mailchimp.EMAIL" required>
+        </md-input-container>
+        <md-button analytics-category="Mailchimp" analytics-event="Register" analytics-on  ng-click="addSubscription(mailchimp)" ng-disabled="MailchimpSubscriptionForm.$invalid" type="submit">Anmelden</md-button>
+      </div>
+
+      <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+      <div class="anim-left colored text-center" ng-cloak ng-if="mailchimp.result === 'error'" style="margin: 1em;">
+        <span ng-bind-html="mailchimp.errorMessage"></span>
+      </div>
+
+      <!-- Show success message if MailChimp returned successfully. -->
+      <div class="anim-left colored text-center" ng-cloak ng-if="mailchimp.result === 'success'" style="margin:0 1em;">
+        <span ng-bind-html="mailchimp.successMessage"></span>
+      </div>
+    </form>
+  </div>
+</div>

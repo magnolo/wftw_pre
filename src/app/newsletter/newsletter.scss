@@ -1,0 +1,16 @@
+form .md-button {
+  color: #006bb6;
+  border: 3px solid;
+  background: rgba(255,255,255,0.5);
+  width:100%;
+  margin: 1em 0;
+}
+form md-input-container:not(.md-input-invalid).md-input-focused{
+    label{
+      color:#006bb6;
+    }
+    .md-input{
+      border-color:#006bb6;
+    }
+
+}

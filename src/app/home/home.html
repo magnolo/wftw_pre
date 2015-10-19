@@ -1,0 +1,19 @@
+<div class="home">
+  <div class="logo">
+    <img style="max-width:125px" src="/assets/images/23_logo.png" />
+  </div>
+  <div class="block">
+  <ul>
+    <li>Wo herrscht welcher Krieg?</li>
+<li>Wo ereignen sich humanitäre Katastrophen?</li>
+<li>Wer tut eigentlich etwas gegen Umweltverschmutzung?</li>
+<li>Wo ist die Pressefreiheit gefährdet?</li>
+<li>Wie sieht es vor Ort um gefährdete Arten aus?</li>
+
+</ul>
+</div>
+<div ui-view="more" class="slide"></div>
+<div layout="row" layout-align="center center" ng-if="home.current != 'home.more'">
+<md-button class="more-button" ui-sref="home.more">mehr erfahren </md-button>
+</div>
+</div>
