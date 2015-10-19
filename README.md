@@ -1,5 +1,5 @@
 # We feel the world
-## spot problems on our earth
+## dein Atlas dieser Welt aus Hilfsbedürftigkeit und Hilfsbereitschaft
 
 + Wo herrscht welcher Krieg?
 + Wo ereignen sich humanitäre Katastrophen?
