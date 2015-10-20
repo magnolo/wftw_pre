@@ -1,0 +1,18 @@
+<svg ng-attr-height="{{options.size}}" ng-attr-width="{{options.size}}">
+<defs>
+<clipPath id="clipPath4">
+  <rect x="0" y="0" ng-attr-width="{{options.size/2}}" ng-attr-height="{{options.size}}" />
+</clipPath>
+<clipPath id="clipPath1">
+  <rect ng-attr-x="{{options.size/2}}" y="0" ng-attr-width="{{options.size/2}}" ng-attr-height="{{options.size}}" />
+</clipPath>
+<mask id="mask">
+  <circle ng-attr-cx="{{options.size/2}}" ng-attr-cy="{{options.size/2}}" ng-attr-r= "{{options.size/2 - options.width}}" style="stroke: #fff;stroke-width: {{options.width}};"></circle>
+</mask>
+</defs>
+<g class="earth-container" style="mask:url(#mask)">
+<circle ng-attr-cx="{{options.size/2}}" ng-attr-cy="{{options.size/2}}" ng-attr-r= "{{options.size/2}}" style="fill:{{color.global}}"></circle>
+<circle ng-attr-cx="{{options.size/2}}" ng-attr-cy="{{options.size/2}}" ng-attr-r="{{options.size/2}}" style="fill:{{color.afternoon}};clip-path: url(#clipPath1);" ></circle>
+<circle ng-attr-cx="{{options.size/2}}" ng-attr-cy="{{options.size/2}}" ng-attr-r="{{options.size/2}}" style="fill:{{color.scale}};clip-path: url(#clipPath4);" ng-attr-transform="translate({{pos}},0) scale({{scale}},1)"></circle>
+</g>
+</svg>

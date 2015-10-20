@@ -3,9 +3,31 @@
 
 <head>
   <meta charset="utf-8">
-  <title>we feel the world</title>
-  <meta name="description" content="">
+  <title>23degree</title>
+  <meta property="og:title" content="23degree">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="canonical" href="http://twentythree.degree">
+  <meta property="og:url" content="http://twentythree.degree">
+  <meta name="description" content="WeFeelTheWorld.org ist dein Atlas dieser Welt aus Hilfsbedürftigkeit und Hilfsbereitschaft.">
+  <meta property="og:description" content="WeFeelTheWorld.org ist dein Atlas dieser Welt aus Hilfsbedürftigkeit und Hilfsbereitschaft.">
   <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800" rel="stylesheet" type="text/css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -31,23 +53,20 @@
     <md-content class="main-container">
       <header>
         <div layout="column" layout-align="center center" layout-md="row" style="position:relative">
-          <div class="news-button" title="Newsletter abonnieren" layout="row" layout-align="center center" ng-mouseover="icon = 'drafts'" ng-mouseleave="icon = 'mail'">
-            <a ui-sref="newsletter" >
-              <ng-md-icon  icon="{{icon || 'mail'}}"  options='{"rotation": "none","duration": 375}'></ng-md-icon>
-            </a>
-          </div>
-          <md-button ui-sref="home">We Feel The World</md-button>
-          <div class="info-button">
-            <a ui-sref="about" style="">
-              <img src="/assets/images/i.png" alt="information" />
-            </a>
+
+          <div class="logo" ui-sref="home">
+
+            <div class="logo-container" ng-controller="LogoCtrl">
+              <div easypiechart options="options" percent="percent"></div>
+              <div easypiechart options="options2" percent="percent2"></div>
+              <div easypiechart options="options3" percent="percent3"></div>
+              <div logodraw options="logo1options" style=" top: -20px;left: -20px;text-align:center"></div>
+            </div>
+            <img style="max-width:125px" src="/assets/images/23_text.png" />
           </div>
         </div>
       </header>
       <div ui-view class="main-content slide"></div>
-      <div ng-show="home"  class="main-content slide"  layout="column" layout-align="center center">
-        <a class="twitter-timeline" height="1500" data-chrome="nofooter noborders transparent noscrollbar"  href="https://twitter.com/wftw_org" data-widget-id="656096340921982976">Tweets von @wftw_org </a>
-      </div>
     </md-content>
 
   </div>
@@ -68,7 +87,6 @@
   <!-- angular templates will be automatically converted in js and inserted here -->
   <!-- endinject -->
   <!-- endbuild -->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </body>
 

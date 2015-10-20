@@ -1,5 +1,5 @@
 form .md-button {
-  color: #006bb6;
+  color: #074487;
   border: 3px solid;
   background: rgba(255,255,255,0.5);
   width:100%;
@@ -7,10 +7,17 @@ form .md-button {
 }
 form md-input-container:not(.md-input-invalid).md-input-focused{
     label{
-      color:#006bb6;
+      color:#074487;
     }
     .md-input{
-      border-color:#006bb6;
+      border-color:#074487;
     }
 
+}
+md-input-container label:not(.md-no-float), md-input-container .md-placeholder:not(.md-select-label){
+  color:#074487;
+  //opacity: 0.5;
+}
+md-input-container .md-input{
+  border-color:#074487;
 }

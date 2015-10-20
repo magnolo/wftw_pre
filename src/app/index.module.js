@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('preSite', ['ngAnimate','ngMessages','ngMdIcons','ngFx','ngCookies','ngResource', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial', "leaflet-directive"]);
+    .module('preSite', ['ngAnimate','ngResource','ngMessages','ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial', "leaflet-directive",'easypiechart']);
 
 })();

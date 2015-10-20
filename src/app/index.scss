@@ -12,3 +12,36 @@
  */
 // injector
 // endinjector
+#main{
+margin:0 auto;
+  height: auto;
+  font-family: Georgia;
+  color:#124486;
+  text-align: center;
+  width:100%;
+  position:absolute;
+  top:50%;
+  margin-top:-255px;
+}
+#logo{
+ margin: 0 auto;
+
+}
+#text{
+  .big{
+    font-size:3em;
+    margin:0.5em auto;
+    text-align:center;
+  }
+
+}
+#text a{
+	color:#124486;
+	text-decoration: none;
+}
+#main .spacer{
+	width:202px;
+	border-top:1px solid;
+	height:1px;
+	margin:0 auto;
+}

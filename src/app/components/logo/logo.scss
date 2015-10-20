@@ -1,0 +1,31 @@
+.logo-container{
+  position:relative;
+  height:110px;
+  width:110px;
+  margin:40px auto;
+  > div{
+    position:absolute;
+    &:nth-child(1){
+      left:-5px;
+      top:-5px;
+    }
+    &:nth-child(2){
+      left:10px;
+      top:10px;
+    }
+    &:nth-child(3){
+      left:25px;
+      top:25px;
+    }
+  }
+  &::after{
+    content: '';
+    width: 1px;
+    height: 150%;
+    border-right: 1px dashed #333;
+    position: absolute;
+    transform: rotate(23deg);
+    left: 55px;
+    top: -27px;
+  }
+}

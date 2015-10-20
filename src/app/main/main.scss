@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
 body {
   font-family: Georgia;
-  color: #333;
+  color: #074487;
 }
 
 .md-button {
@@ -14,13 +13,13 @@ a {
 }
 
 header {
-  font-family: 'Open Sans', sans-serif;
+
   text-align: center;
   margin: 2em;
 
   a {
     &[ui-sref='home'] {
-      color: #006bb6;
+      color: #074487;
       font-size: 1.8em;
       border: 3px solid;
       padding: 0.8em 1.3em;
@@ -28,7 +27,7 @@ header {
     }
   }
   .md-button{
-    color: #006bb6;
+    color: #074487;
     background: rgba(255,255,255,0.5);
   }
   .info-button {
@@ -92,12 +91,12 @@ header {
     max-width: 100%;
   }
   .main-content {
-    background-color: rgba(255,255,255,0.9);
+    //background-color: rgba(255,255,255,0.9);
     //border:1px solid #074487;
-    padding: 2em 8em;
     .block {
       margin: 2em 0;
       padding: 0 5em;
+      max-width: 500px;
       &.center {
         h2 {
           text-align: center;
@@ -109,14 +108,12 @@ header {
       font-weight: normal;
       font-style: italic;
       text-align: left;
-      border-bottom: 2px solid #cbcbcb;
+      border-bottom: 1px solid;
       padding-bottom: 0.3em;
-      color: #006bb6;
       margin-bottom: 1.5em;
     }
     p {
       line-height: 1.5em;
-      margin-bottom: 3em;
     }
   }
   @media screen and (max-width:1600px) {
@@ -124,7 +121,6 @@ header {
   }
   @media screen and (max-width:1400px) {
     .main-content {
-      padding: 2em 6em;
       .block {
         padding: 0 4em;
       }
@@ -171,6 +167,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  opacity: 0.3;
   pointer-events: none;
 }
 .slide {
@@ -199,4 +196,10 @@ header {
 }
 path{
   fill:#006bb6;
+}
+.spacer{
+	width:202px;
+	border-top:1px solid;
+	height:1px;
+	margin:0 auto;
 }
